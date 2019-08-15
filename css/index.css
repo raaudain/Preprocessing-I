@@ -1,1 +1,309 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.container {
+  width: 50%;
+  margin: 2rem auto;
+  font-size: 1.6rem;
+}
+.container p {
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+.container header {
+  display: flex;
+  justify-content: right;
+}
+.container header .navLinks {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  color: #212529;
+  align-items: right;
+}
+@media (max-width: 500px) {
+  .container header .navLinks {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.container header .navLinks a {
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .container header .navLinks a {
+    padding: 2%;
+  }
+}
+.container .intro {
+  background: #e9ecef;
+  padding-bottom: 10%;
+}
+.container .intro h1 {
+  font-size: 5rem;
+}
+@media (max-width: 500px) {
+  .container .intro h1 {
+    text-align: center;
+  }
+}
+.container .intro hr {
+  color: #d5d8db;
+}
+.container .intro p {
+  margin: 3% 0;
+}
+.container .intro button {
+  border: 1px solid #808091;
+  background: #808091;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  color: white;
+}
+.container .resume .top-resume {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .container .resume .top-resume {
+    flex-direction: column;
+  }
+  .container .resume .top-resume h2 {
+    text-align: center;
+  }
+}
+.container .resume .top-resume .hello {
+  width: 48%;
+  margin-right: 2%;
+}
+@media (max-width: 500px) {
+  .container .resume .top-resume .hello {
+    width: 90%;
+    margin: 0 4%;
+  }
+}
+.container .resume .top-resume .hello h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5%;
+}
+@media (max-width: 500px) {
+  .container .resume .top-resume .hello h2 {
+    text-align: center;
+  }
+}
+.container .resume .top-resume .skills {
+  width: 48%;
+}
+.container .resume .top-resume .skills h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5%;
+}
+@media (max-width: 500px) {
+  .container .resume .top-resume .skills h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .container .resume .top-resume .skills {
+    width: 90%;
+    margin: 4% 4%;
+  }
+}
+.container .resume .top-resume .skills ul li {
+  border: 1px solid #808080;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .container .resume .top-resume .skills ul li {
+    margin: 4% 4%;
+    padding: 0;
+    border: 0;
+    text-align: center;
+  }
+}
+.container .resume .history {
+  width: 100%;
+  margin: 3% 0;
+}
+.container .resume .history h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5%;
+}
+@media (max-width: 500px) {
+  .container .resume .history h2 {
+    text-align: center;
+  }
+}
+.container .resume .history table {
+  border: 2px solid black;
+  margin: auto;
+  width: 80%;
+  margin-top: 3%;
+}
+.container .resume .history table th {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  padding: 1%;
+}
+.container .resume .history table td {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 1%;
+}
+.container footer {
+  color: white;
+  background: #808091;
+  width: 100%;
+  padding: 2% 0;
+}
+.container footer #contact {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+.container footer #contact h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5%;
+}
+.container footer #contact p {
+  margin: 3% 0;
+}

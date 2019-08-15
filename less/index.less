@@ -50,10 +50,204 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
+
+.h2(){
+	font-size: 3rem;
+	margin-bottom: 1.5%;
+}
+.flex(){
+	
+	display:flex;
+
+	
+}
+
+@font: 1.6rem;
+@bgcolor: #808091;
+
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
 
+
+.container{
+	width: 50%;
+	margin: 2rem auto;
+	font-size: @font;
+
+	p{
+		line-height: 1.5;
+	}
+
+	@media(max-width:500px){
+		width: 100%;
+		
+	}
+
+	header{
+		.flex();
+		justify-content: right;
+		
+		.navLinks{
+			width: 40%;
+			.flex();
+			justify-content: space-between;
+			color: #212529;
+			align-items: right;
+			@media(max-width:500px){
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+			}
+			a{
+				text-decoration: none;
+				@media(max-width: 500px){
+					padding: 2%;
+				}
+			}
+			
+		}
+	}
+
+	.intro{
+		background:#e9ecef;
+		padding-bottom: 10%;
+		
+		h1{
+			font-size: 5rem;
+			@media(max-width: 500px){
+				
+				text-align: center;
+			}
+		}
+		hr{
+			color:#d5d8db;
+		}
+		p{
+			margin: 3% 0;
+		}
+		button{
+			border: 1px solid @bgcolor;
+			background: @bgcolor;
+			padding: 4px 8px;
+			border-radius: 5px;
+			font-size: 1.6rem;
+			color: white;
+			
+		}
+	}
+
+	.resume{
+		
+		.top-resume{
+			.flex();
+			@media(max-width: 500px){
+				flex-direction: column;
+				h2{
+					text-align: center;
+				}
+			}
+			.hello{
+				
+				width: 48%;
+				margin-right: 2%;
+				@media(max-width: 500px){
+					width: 90%;
+					margin: 0 4%;
+				}
+				h2{
+					.h2();
+					
+					@media(max-width: 500px){
+						text-align: center;
+					}
+				}
+				
+			}
+			.skills{
+				
+				
+				h2{
+					
+					.h2();
+					@media(max-width: 500px){
+						text-align: center;
+					}
+					
+				}
+				width:48%;
+				@media(max-width: 500px){
+					width: 90%;
+					margin: 4% 4%;
+				}
+				ul li{
+					border: 1px solid #808080;
+					padding: 10px;
+					@media(max-width: 500px){
+						margin: 4% 4%;
+						padding: 0;
+						border: 0;
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		.history{
+			
+			h2{
+				.h2();
+				@media(max-width: 500px){
+					text-align: center;
+				}
+			}
+			width: 100%;
+			margin: 3% 0;
+			table{
+				border: 2px solid black;
+				margin: auto;
+				width: 80%;
+				margin-top: 3%;
+				th{
+					font-weight: bold;
+					border-bottom: 1px solid black;
+					padding: 1%;
+				}
+				td{
+					text-align: center;
+					border-bottom: 1px solid black;
+					padding: 1%;
+				}
+			}
+		}
+	}
+
+	footer{
+		
+		color: white;
+		background: @bgcolor;
+		width: 100%;
+		padding: 2% 0;
+		
+		#contact{
+			margin: auto;
+			width: 50%;
+			text-align: center;
+			h2{
+				.h2();
+				
+			}
+			p{
+				margin: 3% 0;
+			}
+			
+		}
+
+	}
+	
+}
