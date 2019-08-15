@@ -295,15 +295,15 @@ body {
   width: 100%;
   padding: 2% 0;
 }
-.container footer .contact {
+.container footer #contact {
   margin: auto;
   width: 50%;
   text-align: center;
 }
-.container footer .contact h2 {
+.container footer #contact h2 {
   font-size: 3rem;
   margin-bottom: 1.5%;
 }
-.container footer .contact p {
+.container footer #contact p {
   margin: 3% 0;
 }
